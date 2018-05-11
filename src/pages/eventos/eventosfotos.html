@@ -1,0 +1,34 @@
+<!--
+  Generated template for the EventosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-header>
+        <ion-toolbar>
+          <ion-title>
+            Fotos
+          </ion-title>
+          <ion-buttons start>
+            <button ion-button (click)="dismiss()">
+              <span ion-text style="color: white;" >Fechar</span>
+            </button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+    
+
+</ion-header>
+
+
+
+<ion-content padding>
+    <ion-list *ngFor="let data of registrosFostos let i = index" no-lines>
+   
+      <img src="http://www.ibln.org.br/estilo/imagens/fotos_eventos/{{data.imagem}}">
+
+    </ion-list>
+
+</ion-content>

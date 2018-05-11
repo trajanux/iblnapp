@@ -1,0 +1,8 @@
+{
+  "name": "ibln-app",
+  "app_id": "cdbe3f97",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

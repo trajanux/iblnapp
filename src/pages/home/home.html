@@ -1,0 +1,62 @@
+
+
+<ion-content>
+        <ion-fab left top>
+                <button ion-fab color="dark" menuToggle>
+                        <ion-icon name="menu"></ion-icon>
+                </button>
+            </ion-fab>
+           
+
+        <ion-slides pager style="height: 220px; background-color: black">
+            <ion-slide >
+                <img (click)="openNossaHitoria()" src="assets/imgs/um-lugar-da-graca-de-deus_132592.jpg"/>
+            </ion-slide>
+            <ion-slide >
+               <a href="https://www.cabecaoibln.com/"> <img  src="assets/imgs/acamp.png"/></a>
+            </ion-slide>         
+         </ion-slides>
+         <ion-img  style="min-height: 100px; width: 32%" src="assets/imgs/cultoonline.png" (click)="openIBLNTV()"></ion-img>
+         <ion-img  style="min-height:100px; width: 32%" src="assets/imgs/boletininformativo.png" (click)="openBoletins()"></ion-img>
+         <ion-img  style="min-height: 100px; width: 32%" src="assets/imgs/palavrapastor.png" (click)="openPastorais()"></ion-img>
+     
+            <ion-img style="min-height: 100px; width: 32%"  src="assets/imgs/eventos.png" (click)="openEventos()"></ion-img>
+            <ion-img  style="min-height:100px; width: 32%" src="assets/imgs/agendaibln.png" (click)="openAgenda()"></ion-img>
+            <ion-img  style="min-height:100px; width: 32%" src="assets/imgs/sistemas.png" (click)="openSistemas()"></ion-img>
+          
+         <br><Br>
+<hr style="background-image: url('assets/imgs/captura.png');
+background-position: top;
+background-repeat: no-repeat;background-size: 110%;height: 12px;" />
+
+
+
+
+       
+
+           
+      
+        
+
+  <ion-icon name="chat"></ion-icon>
+    <ion-list *ngFor="let data of registros let i = index" no-lines>
+        
+        <ion-card>
+            <img src="{{data['imagem']}}"/>
+            <ion-card-content>
+              <ion-card-title>
+                    {{data['titulo']}}
+                </ion-card-title>
+              <p [innerHtml]="data['descricao']">
+               
+              </p>
+            </ion-card-content>
+          </ion-card>
+ 
+    </ion-list>
+
+</ion-content>
+
+<ion-footer>
+
+</ion-footer>

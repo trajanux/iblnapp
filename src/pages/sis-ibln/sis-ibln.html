@@ -1,0 +1,26 @@
+<!--
+  Generated template for the ContatoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<style>
+  .iframe-wrapper iframe{
+  width: 100%;
+  height: 100%;
+  border: none
+}
+</style>
+
+
+
+<ion-content class="iframe-wrapper">
+    <ion-fab right bottom>
+        <button ion-fab color="dark" menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-fab>
+  <iframe (load)="dismissLoading()"  [src]=paginaAcesso data-tap-disabled="true" overflow-scroll=“true” [hidden]="viewSelector" >
+        <p>Sem suporte ao sistema.</p>
+ </iframe>
+ </ion-content>
